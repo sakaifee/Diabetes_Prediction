@@ -1,7 +1,5 @@
 FROM python:3.10.9
 
-ARG PORT=8000
-
 ENV PYTHONUNBUFFERED=1
 ENV VIRTUAL_ENV=/opt/venv
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
@@ -23,7 +21,3 @@ COPY . .
 
 # Install Python dependencies
 RUN pip install --upgrade pip && pip install -r requirements.txt
-
-EXPOSE $PORT
-
-CMD ["uvicorn", "--host", "0.0.0.0", "--port", "8000", "main:app"]
