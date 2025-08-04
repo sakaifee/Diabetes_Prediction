@@ -3,6 +3,12 @@ from data_loader import load_data
 from data_preprocessing import preprocess_data
 from sklearn.model_selection import train_test_split
 from sklearn import svm
+import pickle
+import os
+
+model_folder = r"C:\Users\ShadanAlamKaifee\Documents\Projects\Diabetes_Prediction\models"
+model_filename = "diabetes_prediction_model.pkl"
+model_path = os.path.join(model_folder, model_filename)
 
 
 def training_data(X_train, Y_train):
@@ -38,4 +44,6 @@ if __name__ == "__main__":
     # Model accuracy
     prediction = predict_model(model, X_test, Y_test)
 
-  
+    with open(model_path, 'wb') as file:
+        pickle.dump(model, file)
+        print("Model saved to model.pkl")
