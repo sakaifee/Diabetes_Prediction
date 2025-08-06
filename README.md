@@ -1,9 +1,18 @@
 ## Diabetes Prediction 
 
 ## Installation
-```bash
-docker-compose up --build
 
+#### Build Docker Imges
+```bash
+docker-compose build
+```
+#### Run Docker Images
+``` bash
+docker-compose up
+```
+#### Stop Docker Images
+```bash
 docker-compose down
+```
 
 
