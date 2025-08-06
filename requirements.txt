@@ -12,4 +12,4 @@ fastapi==0.110.1
 uvicorn>=0.15.0,<0.16.0
 python-multipart==0.0.20
 numpy
-
+python-dotenv==1.1.1
