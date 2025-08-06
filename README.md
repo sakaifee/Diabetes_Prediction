@@ -2,7 +2,7 @@
 
 ## Installation
 
-#### Build Docker Imges
+#### Build Docker Images
 ```bash
 docker-compose build
 ```
@@ -10,7 +10,7 @@ docker-compose build
 ``` bash
 docker-compose up
 ```
-#### Stop Docker Images
+#### Stop Docker Containers
 ```bash
 docker-compose down
 ```
